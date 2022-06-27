@@ -7,7 +7,7 @@
   "scripts": {
     "build": "ncc build -o dist/setup src/setup-python.ts && ncc build -o dist/cache-save src/cache-save.ts",
     "format": "prettier --write \"{,!(node_modules)/**/}*.ts\"",
-    "format-check": "prettier --check \"{,!(node_modules)/**/}*.ts\"",
+    "format-check": "./run.sh",
     "release": "ncc build -o dist/setup src/setup-python.ts && ncc build -o dist/cache-save src/cache-save.ts && git add -f dist/",
     "test": "jest"
   },
